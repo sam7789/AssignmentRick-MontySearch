@@ -3,8 +3,6 @@
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  margin-right: 0.5em;
-  margin-top: 0.5em;
 }
 
 .greyCircle {
@@ -12,7 +10,80 @@
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  margin-right: 5px;
-  margin-right: 0.5em;
-  margin-top: 0.5em;
+}
+
+.detailContainer {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(135, 135, 135, 0.521);
+}
+.detailDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.detailClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+}
+.detailTop {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.detailTop > div > div{
+  display: flex;
+  margin: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.detailTop > div {
+  max-width: 9em;
+}
+
+.detailTop p {
+  font-weight: bold;
+}
+
+.detailTop img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.detailDivider {
+  width: 99%;
+  border-top: 1px solid grey;
+  margin: 1.5rem auto
+}
+
+.detailBottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.detailBottomSection {
+  max-width: 5rem;
+}
+
+.detailBottomHeading {
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.685);
 }

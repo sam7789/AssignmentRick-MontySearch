@@ -22,7 +22,7 @@
   font-size: 0.9em;
 }
 
-.NameAndData {
+.nameAndData {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -35,10 +35,6 @@
 .NameAndData p {
   font-weight: 500;
 }
-
-/* .NameAndData div{
-
-} */
 
 .dataCard {
   display: flex;

@@ -65,7 +65,7 @@ export const BasicCard = ({ data, handlePage, loading }) => {
                 setSelected(item);
               }}
             >
-              <div className="NameAndData">
+              <div className="nameAndData">
                 <img src={item.image} alt={item.name} />
 
                 <p>{item.name}</p>
