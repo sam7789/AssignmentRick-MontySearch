@@ -62,3 +62,11 @@
   align-items: center;
   gap: 0.5em;
 }
+
+.loadingDiv {
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}

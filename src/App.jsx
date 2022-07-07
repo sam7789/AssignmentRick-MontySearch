@@ -20,21 +20,24 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    axios
-      .get(
-        `https://rickandmortyapi.com/api/character/?name=${search}&page=${page}`
-      )
-      .then((res) => {
-        setData([...data, ...res.data.results]);
-        if (lastpage === null || lastpage !== res.data.info.pages)
-          setLastpage(res.data.info.pages);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err);
-        setLoading(false);
-      });
-    return () => {};
+    let timeOut = setTimeout(() => {
+      axios
+        .get(
+          `https://rickandmortyapi.com/api/character/?name=${search}&page=${page}`
+        )
+        .then((res) => {
+          setData([...data, ...res.data.results]);
+          if (lastpage === null || lastpage !== res.data.info.pages)
+            setLastpage(res.data.info.pages);
+          setLoading(false);
+        })
+        .catch((err) => {
+          setError(err);
+          setLoading(false);
+        });
+    }, 200);
+
+    return () => clearTimeout(timeOut);
   }, [search, page]);
 
   return (

@@ -88,7 +88,7 @@ export const BasicCard = ({ data, handlePage, loading }) => {
       ) : (
         <div> Nothing Found </div>
       )}
-      {loading ? <div>Loading...</div> : null}
+      {loading ? <div className="loadingDiv">Loading...</div> : null}
     </div>
   );
 };
