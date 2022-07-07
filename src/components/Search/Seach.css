@@ -1,0 +1,26 @@
+.searchContainer {
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  padding: 0.5em 1em;
+  align-items: center;
+  margin-bottom: 0.5em;
+  justify-content: space-around;
+  color: rgb(199, 199, 199);
+  font-size: 1.5em;
+}
+.searchContainer input {
+  width: 90%;
+  border: none;
+  padding: 1.5em 0.2em;
+  border-radius: 0.5em;
+}
+
+.searchContainer input:focus {
+  outline: none;
+}
+
+.searchContainer input ::placeholder {
+  color: rgb(199, 199, 199);
+}
